@@ -33,7 +33,7 @@ sp.correct2 <- round(colMeans(correct2[[4]]),3)
 sp.miss1 <- round(colMeans(miss1[[4]]),3)
 sp.miss2 <- round(colMeans(miss2[[4]]),3)
 
-#TABLE#
+# CREATE TABLE 1 #
 results <- rbind(mle.correct,sp.1.correct,sp.2.correct,sp.correct,
                  mle.correct2,sp.1.correct2,sp.2.correct2,sp.correct2,
                  mle.miss1,sp.1.miss1,sp.2.miss1,sp.miss1,
@@ -42,9 +42,7 @@ colnames(results) <- c("PSI","PIIE","VAR","BIAS","COVERAGE")
 
 xtable(results)
 
-#PLOT#
-
-
+# CREATE FIGURE 2#
 results.figure <- data.frame(cbind(rbind( cbind(1,c(correct[[1]][,2],correct[[2]][,2],correct[[3]][,2],correct[[4]][,2])),
                                           cbind(2,c(correct2[[1]][,2],correct2[[2]][,2],correct2[[3]][,2],correct2[[4]][,2])),
                                           cbind(3,c(miss1[[1]][,2],miss1[[2]][,2],miss1[[3]][,2],miss1[[4]][,2])),

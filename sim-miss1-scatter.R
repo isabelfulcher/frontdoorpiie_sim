@@ -1,7 +1,6 @@
 #####################################
 # SIMULATIONS -- CLUSTER -- WRONG 1 #
 # LEAVE OUT INTERACTION AND CONF FOR MODEL FOR A #
-##    UPDATED ON APRIL 22, 2019      ##
 #####################################
 
 library(readr)

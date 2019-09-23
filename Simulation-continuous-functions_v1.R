@@ -95,7 +95,6 @@ psi.truth.function.continuous <- function(n,p.c1,p.c3,alpha,omega,beta.truth,the
 
 
 ###### FUNCTION THAT CALCULATE PSI MLE###### 
-#NOTE: YOU NEED TO PUT ZEROS IN BETA.HAT WHERE CONFOUNDERS ARE MISSING -- FIX MAKE FLEXIBLE
 psi.mle.function.cont <- function(cov.vals.all,exposure.data,beta.hat,theta.hat,astar,interaction){
   
   mean.cov.all <- apply(cov.vals.all,2,mean)

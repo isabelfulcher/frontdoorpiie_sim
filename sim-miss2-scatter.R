@@ -2,7 +2,6 @@
 # SIMULATIONS -- CLUSTER -- WRONG 2 #####
 # LEAVE OUT CONFOUNDERS IN MODEL FOR Z #
 # AND LEAVE OUT UNMEASURED CONFOUNDER #
-##    UPDATED ON APRIL 22, 2019      ##
 #########################################
 
 library(readr)
