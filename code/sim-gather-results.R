@@ -4,13 +4,13 @@ library(BuenColors)
 library(xtable)
 
 #load truth
-load("frontdoor-truth.rda")
+load("truth/frontdoor-truth.rda")
 
 #load results
-correct <- readRDS("data/out_correct.rds")
-correct2 <- readRDS("data/out_correct2.rds")
-miss1 <- readRDS("data/out_miss1.rds")
-miss2 <- readRDS("data/out_miss2.rds")
+correct <- readRDS("output/out_correct.rds")
+correct2 <- readRDS("output/out_correct2.rds")
+miss1 <- readRDS("output/out_miss1.rds")
+miss2 <- readRDS("output/out_miss2.rds")
 
 #save results in R space
 mle.correct <- round(colMeans(correct[[1]]),3)
@@ -59,4 +59,4 @@ p2 <- plot + geom_boxplot() +
   pretty_plot() +
   theme(legend.key.height = unit(1, "cm"),legend.key.width = unit(1, "cm"),legend.text=element_text(size=20),axis.title=element_text(size=24),text = element_text(size=20),axis.text.x = element_text(size=20, angle=0),axis.text.y = element_text(size=20, angle=0)) 
 
-ggsave(p2, file = "sim-results-notitle.png", dpi = 300, width = 15, height = 10)
+ggsave(p2, file = "figure/sim-results-notitle.png", dpi = 300, width = 15, height = 10)
